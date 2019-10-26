@@ -1,1 +1,2 @@
-# hack
+# AUTO INSTALLER || CLIENT
+### #Wifi hacks
