@@ -4,7 +4,7 @@ import urllib.request
 import sys
 
 
-if sys.platform == "win32":
+if sys.platform == "Linux":
 	print("""
 	 .----------------.  .-----------------. .----------------.  .----------------. 
 	| .--------------. || .--------------. || .--------------. || .--------------. |
@@ -36,7 +36,7 @@ if sys.platform == "win32":
 
 ###
 
-url = "https://github.com/find-or-die/cfg/raw/master/installera.cfg" # url to update (CFG)
+url = "https://raw.githubusercontent.com/find-or-die/cfg/master/installer.cfg" # url to update (CFG)
 
 ###
 urllib.request.urlretrieve(url, "config.cfg")

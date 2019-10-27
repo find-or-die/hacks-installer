@@ -27,11 +27,17 @@ def WIFI_in_MAIN_MENU():
 
 
 	""")
+	
 	if os.path.exists('./wifite2'):
 		print("#WIFITE")
 
 	if os.path.exists('./wifite'):
-		print("#WIFITE (1)")
+		print("#WIFITE 1")
+	print("- - - - - - -- - - - - - - - - - - - - - - - - - - - -")
+	print("- - - - - - -- - - - - - - - - - - - - - - - - - - - -")
+	WIFI_input = input("? - ")
+	if (WIFI_input == "WIFITE" or WIFI_input == "WiFiTe" or WIFI_input == "wifite" or WIFI_input == "WifiTe" or WIFI_input == "WiFite" or WIFI_input == "#WIFITE" or WIFI_input == "#WiFiTe" or WIFI_input == "#wifite" or WIFI_input == "Wifi" or WIFI_input == "#Wifi"):
+		print("wifite OK")
 ###
 
 if sys.platform == "win32":
