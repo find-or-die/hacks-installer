@@ -4,7 +4,7 @@ import urllib.request
 import sys
 
 
-if sys.platform == "Linux":
+if sys.platform != "Linux":
 	print("""
 	 .----------------.  .-----------------. .----------------.  .----------------. 
 	| .--------------. || .--------------. || .--------------. || .--------------. |
@@ -36,7 +36,7 @@ if sys.platform == "Linux":
 
 ###
 
-url = "https://raw.githubusercontent.com/find-or-die/cfg/master/installer.cfg" # url to update (CFG)
+url = "https://find-or-die.github.io/cfg/installer-wifi.cfg" # url to update (CFG)
 
 ###
 urllib.request.urlretrieve(url, "config.cfg")
@@ -142,4 +142,4 @@ print("""
 """)
 
 time.sleep(5)
-###exit()
+exit()
